@@ -9,5 +9,25 @@ Distancia	  | Con SUBE registrada   | Con SUBE sin registrar
 */
 
 boton.addEventListener("click", () => {
-  // COMPLETAR
+  let registrada = document.getElementById("registrada");
+  let distancia = document.getElementById("distancia");
+  let tarifa = document.getElementById("tarifa");
+  let boton = document.getElementById("boton");
+
+  let kms = Number(distancia.value);
+
+  
+  if (registrada.value === "si") {
+    if (kms <= 3) {
+      tarifa = 715.24;
+    }
+    else if (kms <= 6) {
+      tarifa = 794.94;
+
+    }
+
+  } else {
+    // sube no registrada
+  }
+
 });
